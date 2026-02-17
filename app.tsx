@@ -1,5 +1,6 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { useFonts } from "expo-font";
+import Toast from "react-native-toast-message";
 import RootNavigator from "./src/navigation/RootNavigation";
 import { loadFonts } from "./src/theme/fonts";
 
@@ -8,8 +9,11 @@ export default function App() {
 
   if (!loaded) return null;
   return (
-    <NavigationContainer>
-      <RootNavigator />
-    </NavigationContainer>
+    <>
+      <NavigationContainer>
+        <RootNavigator />
+      </NavigationContainer>
+      <Toast />
+    </>
   );
 }
