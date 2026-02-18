@@ -21,11 +21,14 @@ const ProviderCard = ({ data }: any) => {
           {data.name}
         </Text>
         <Pressable
-          style={styles.redirectButton}
+          style={({ pressed }) => [
+            styles.redirectButton,
+            pressed && styles.pressed,
+          ]}
           onPress={() => openExternalUrl(data.url)}
         >
           <Text style={styles.redirectButtonText}>Visit</Text>
-          <Feather name="arrow-up-right" size={14} color={COLORS.white} />
+          <Feather name="arrow-up-right" size={14} color={COLORS.primary} />
         </Pressable>
       </View>
       <View style={styles.body}>
@@ -39,6 +42,7 @@ const ProviderCard = ({ data }: any) => {
       <ProviderModal
         isVisible={modalVisible}
         onClose={() => setModalVisible(false)}
+        data={data}
       />
     </Pressable>
   );

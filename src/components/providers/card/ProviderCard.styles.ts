@@ -60,8 +60,6 @@ export const styles = StyleSheet.create({
     },
 
     redirectButton: {
-        backgroundColor: COLORS.primary,
-        paddingHorizontal: 20,
         borderRadius: 10,
         height: 40,
         flexDirection: "row",
@@ -70,8 +68,11 @@ export const styles = StyleSheet.create({
         gap: 2
     },
     redirectButtonText: {
-        color: "#fff",
+        color: COLORS.primary,
         fontFamily: FONTS.bold,
         fontSize: 14,
     },
+    pressed: {
+        opacity: 0.5
+    }
 });
