@@ -8,22 +8,24 @@ const debuggerHost = Constants.expoConfig?.hostUri;
 // 2. Extract just the IP part (e.g., "192.168.0.105" from "192.168.0.105:8081")
 const localIp = debuggerHost?.split(':')[0];
 
-// 3. Set up the dynamic base URL
-let baseURL = 'http://localhost:8080/api';
-
+// 3. Set up the dynamic base host
+let baseHost = 'http://localhost:8080';
 
 if (__DEV__) {
     if (localIp) {
-        baseURL = `http://${localIp}:8080/api`;
+        baseHost = `http://${localIp}:8080`;
     } else if (Platform.OS === 'android') {
-        baseURL = 'http://10.0.2.2:8080/api';
+        baseHost = 'http://10.0.2.2:8080';
     }
 } else {
-    baseURL = 'https://api.yourproductiondomain.com/api';
+    baseHost = 'https://api.yourproductiondomain.com';
 }
 
+export const REST_URL = `${baseHost}/api`;
+export const GRAPHQL_URL = `${baseHost}/graphql`;
+
 const api = axios.create({
-    baseURL,
+    baseURL: REST_URL,
     timeout: 5000,
 });
 
