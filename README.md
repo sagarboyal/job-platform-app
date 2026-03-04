@@ -1,50 +1,92 @@
-# Welcome to your Expo app 👋
+# 🏛️ GovJobs — Government Job Platform App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+> ⚠️ This project is currently under active development. Features may change.
 
-## Get started
+A mobile app to browse **officially posted government jobs** — no account or login needed. Built with React Native & TypeScript using Expo.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 📱 About the App
 
-2. Start the app
+GovJobs lets users view real government job postings directly from official sources. The goal is a clean, fast, no-friction experience — open the app, see the jobs.
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## ✨ Features
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- [x] Browse official government job listings
+- [x] No login or signup required
+- [x] Direct job posting view
+- [ ] Filter by portals / state / category
+- [ ] Job detail page
+- [ ] Search functionality
+- [ ] Bookmark / save jobs
+- [ ] Notifications for new postings
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## 🛠️ Tech Stack
 
-When you're ready, run:
+| Tool | Purpose |
+|------|---------|
+| React Native | Mobile UI framework |
+| TypeScript | Type-safe development |
+| Expo | Build & development platform |
+| React navigation | for routing |
 
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 18+
+- Expo CLI
+
+### Installation
 ```bash
-npm run reset-project
+git clone https://github.com/sagarboyal/job-platform-app.git
+cd job-platform-app
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Run the App
+```bash
+npx expo start
+```
 
-## Learn more
+Open in:
+- 📱 [Expo Go](https://expo.dev/go)
+- 🤖 [Android Emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+- 🍎 [iOS Simulator](https://docs.expo.dev/workflow/ios-simulator/)
 
-To learn more about developing your project with Expo, look at the following resources:
+---
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 📁 Project Structure
+```
+app/           # Screens & file-based routing
+components/    # Reusable UI components
+constants/     # Colors, config values
+assets/        # Images, fonts, icons
+```
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
+## 🗺️ Roadmap
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- [ ] Job search & filters
+- [ ] Job detail screen
+- [ ] Bookmarks
+- [ ] Push notifications
+- [ ] Offline support
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome! For major changes, please open an issue first.
+
+---
+
+## 📄 License
+
+[MIT](LICENSE)
