@@ -1,92 +1,61 @@
-# 🏛️ GovJobs — Government Job Platform App
+# Job Platform App
 
-> ⚠️ This project is currently under active development. Features may change.
+A React Native mobile app for browsing official government job listings — no login required.
 
-A mobile app to browse **officially posted government jobs** — no account or login needed. Built with React Native & TypeScript using Expo.
-
----
-
-## 📱 About the App
-
-GovJobs lets users view real government job postings directly from official sources. The goal is a clean, fast, no-friction experience — open the app, see the jobs.
+> 🚧 Active development — features and APIs may change.
 
 ---
 
-## ✨ Features
+## Tech Stack
 
-- [x] Browse official government job listings
-- [x] No login or signup required
-- [x] Direct job posting view
-- [ ] Filter by portals / state / category
-- [ ] Job detail page
-- [ ] Search functionality
-- [ ] Bookmark / save jobs
-- [ ] Notifications for new postings
+| | |
+|---|---|
+| React Native + Expo | Mobile framework |
+| TypeScript | Language |
+| React Navigation | Navigation & routing |
 
 ---
 
-## 🛠️ Tech Stack
+## Getting Started
 
-| Tool | Purpose |
-|------|---------|
-| React Native | Mobile UI framework |
-| TypeScript | Type-safe development |
-| Expo | Build & development platform |
-| React navigation | for routing |
+**Prerequisites:** Node.js 18+, Expo CLI
 
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Node.js 18+
-- Expo CLI
-
-### Installation
 ```bash
 git clone https://github.com/sagarboyal/job-platform-app.git
 cd job-platform-app
 npm install
-```
-
-### Run the App
-```bash
 npx expo start
 ```
 
-Open in:
-- 📱 [Expo Go](https://expo.dev/go)
-- 🤖 [Android Emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- 🍎 [iOS Simulator](https://docs.expo.dev/workflow/ios-simulator/)
+Run on:
+- [Expo Go](https://expo.dev/go)
+- [Android Emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+- [iOS Simulator](https://docs.expo.dev/workflow/ios-simulator/)
 
 ---
 
-## 📁 Project Structure
+## Project Structure
+
 ```
-app/           # Screens & file-based routing
-components/    # Reusable UI components
-constants/     # Colors, config values
-assets/        # Images, fonts, icons
+src/
+├── components/    → Reusable UI (provider cards, modals)
+├── navigation/    → Root & tab navigator
+├── screens/       → Welcome, Home, Bookmarks
+├── theme/         → Colors, fonts, images
+└── utils/         → Linking, toast helpers
 ```
 
 ---
 
-## 🗺️ Roadmap
+## Status
 
-- [ ] Job search & filters
-- [ ] Job detail screen
-- [ ] Bookmarks
-- [ ] Push notifications
-- [ ] Offline support
-
----
-
-## 🤝 Contributing
-
-Pull requests are welcome! For major changes, please open an issue first.
-
----
-
-## 📄 License
-
-[MIT](LICENSE)
+| Feature | Status |
+|---|---|
+| Browse government job listings | ✅ Done |
+| No login required | ✅ Done |
+| Provider cards & modals | ✅ Done |
+| Bookmarks screen | ✅ Done |
+| Job detail page | 🔄 Planned |
+| Filter by portal / category | 🔄 Planned |
+| Search | 🔄 Planned |
+| Push notifications | 🔄 Planned |
