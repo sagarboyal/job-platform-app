@@ -1,6 +1,7 @@
 export type JobStatus = 'ACTIVE' | 'INACTIVE' | 'EXPIRED';
 
 export type EmploymentType = 'FULL_TIME' | 'PART_TIME' | 'CONTRACT';
+
 export interface JobDto {
     id: number;
     advertisementNo: string;
